@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <p>你是一个王者!</p>
+			<p>你是一个中国人民吗?</p>
       </header>
     </div>
   );
