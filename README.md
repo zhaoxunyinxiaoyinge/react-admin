@@ -66,3 +66,24 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### 需求分析
+1.antd开源课框架；
+   2.css样式 语言为less
+   3.数据库为 mongdb,和接口,对 接 为 R2模以 数据,后端对接 ;
+   4.管理员管理,curd;
+   5.用户登陆和退出,用户权限管理;
+   6.电子表格excel的导入和导出;
+   7.富文本编辑器的书写;
+   8.图片上传
+   9.表格的ehart的利用;
+   10.路由的懒加载
+   11.通知中心内容修改
+   12.商品图书的curd
+   13.图书商品详情页
+   14.设置中心，用户的信息请况；
+   
+   11.后台管理系统node.js
+   12.后台数据库为远程数据库mongodb;
+   13.对数据库增删改查;
+   14.用后台express框架，创建后台数据接口；
+   15.设置权限验证, 保证接口只在被授权用户访问；并设置为token;
