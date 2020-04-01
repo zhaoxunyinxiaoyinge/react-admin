@@ -1,4 +1,4 @@
-import {Admin,Board,Login,Settings,UserInfo,NotFounds,Goods,}  from "./../pages"
+import {Admin,Board,Login,Settings,UserInfo,NotFounds,Goods,AdminUpdate}  from "./../pages"
 import React from "react"
 import {
     sergroupAddOutlined,AreaChartOutlined,ShopOutlined,SettingOutlined,UsergroupAddOutlined
@@ -22,28 +22,38 @@ const AdminRouter=[
         pathname:"/Admin/list",
         exact:true,
         component:Admin,
-        icon:<UsergroupAddOutlined/>
+        icon:<UsergroupAddOutlined/>,
+        isNav:true
+    },
+    {
+        pathname:"/Admin/update",
+        exact:true,
+        component:AdminUpdate,
+        isNav:false
     },
     {
         title:'仪表盘',
         pathname:"/Admin/Board",
         exact:true,
         component:Board,
-        icon:<AreaChartOutlined/>
+        icon:<AreaChartOutlined/>,
+        isNav:true
     },
     {
         title:'商品',
         pathname:"/Admin/Goods",
         exact:true,
         component:Goods,
-        icon:<ShopOutlined/>
+        icon:<ShopOutlined/>,
+        isNav:true
     },
     {
         title:'设置中心',
         pathname:"/Admin/Settings",
         exact:true,
         component:Settings,
-        icon:<SettingOutlined/>
+        icon:<SettingOutlined/>,
+        isNav:true
     }
 ]
 export {

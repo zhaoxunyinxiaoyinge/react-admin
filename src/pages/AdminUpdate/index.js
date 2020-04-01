@@ -1,25 +1,29 @@
 import React, {Component} from 'react';
-import { Form, Input, Button, Checkbox } from 'antd';
-import style from "./index.module.less"
-const layout = {
-    labelCol: {
-        span: 4,
-    },
-    wrapperCol: {
-        span: 13,
-    },
-};
-const tailLayout = {
-    wrapperCol: {
-        offset: 4,
-        span: 13,
-    },
-}
-class Loin extends Component {
+import {Form, Input, Button, Checkbox } from "antd"
+import  style from "./index.module.less"
+class AdminUpdate extends Component {
+
     onFinish = values => {
         console.log('Success:', values);
     };
+    onFinishFailed = errorInfo => {
+        console.log('Failed:', errorInfo);
+    };
     render() {
+        const layout = {
+            labelCol: {
+                span: 2,
+            },
+            wrapperCol: {
+                span: 10,
+            },
+        };
+        const tailLayout = {
+            wrapperCol: {
+                offset: 2,
+                span: 10,
+            },
+        };
         return (
             <div className={style.forms}>
                 <Form
@@ -28,9 +32,21 @@ class Loin extends Component {
                     initialValues={{
                         remember: true,
                     }}
-                    onFinish={this.onFinish.bind(this)}
-                    className={style.login}
+                    onFinish={this.onFinish}
+                    onFinishFailed={this.onFinishFailed}
                 >
+                    <Form.Item
+                        label="ID"
+                        name="_id"
+                        rules={[
+                            {
+                                required: true,
+                                message: 'Please input your username!',
+                            },
+                        ]}
+                    >
+                        <Input disabled />
+                    </Form.Item>
                     <Form.Item
                         label="Username"
                         name="username"
@@ -61,7 +77,7 @@ class Loin extends Component {
                         <Checkbox>Remember me</Checkbox>
                     </Form.Item>
 
-                    <Form.Item {...tailLayout}>
+                    <Form.Item  {...tailLayout}>
                         <Button type="primary" htmlType="submit">
                             Submit
                         </Button>
@@ -71,5 +87,4 @@ class Loin extends Component {
         );
     }
 }
-
-export default Loin;
+export default AdminUpdate;

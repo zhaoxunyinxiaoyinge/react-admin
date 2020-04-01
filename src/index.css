@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#root {
+  background:url("https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2429267864,3880682838&fm=26&gp=0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

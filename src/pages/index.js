@@ -7,6 +7,7 @@ import {Loading} from "./../Components/"
  const NotFounds=Loadable({loader:()=>import("./NotFound"),loading:Loading});
  const Settings=Loadable({loader:()=>import("./Settings"),loading:Loading});
  const UserInfo=Loadable({loader:()=>import("./userInfo"),loading:Loading});
+ const AdminUpdate=Loadable({loader:()=>import("./AdminUpdate"),loading:Loading});
 export {
     Admin,
     Board,
@@ -14,5 +15,6 @@ export {
     Login,
     NotFounds,
     Settings,
-    UserInfo
+    UserInfo,
+    AdminUpdate
 }
