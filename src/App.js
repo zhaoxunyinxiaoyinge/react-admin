@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { danyRoute } from "./router";
+import { Switch, Route, Redirect } from "react-router-dom";
+import Layout from "./layout";
 
-function App() {
+
+function App(props, context) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Switch>
+        {danyRoute.map((item, index) => {
+          return (
+            <Route exact path={item.pathname} key={index}>
+              {<item.component />}
+            </Route>
+          );
+        })}
+        <Redirect to="/admin/danborad" from="/admin"></Redirect>
+        <Redirect to="/404"></Redirect>
+      </Switch>
+    </Layout>
   );
-}
+} 
 
 export default App;
