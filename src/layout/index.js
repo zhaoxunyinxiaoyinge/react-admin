@@ -72,12 +72,12 @@ const Layout = class extends Component {
         <header className={module.header}>
           <div style={{display:"flex",alignItems:"center"}}> 
             <Image
-              style={{ height: "50px", width: "100px", borderRadius: "5px" }}
+              style={{ height: "50px", width: "100px", borderRadius: "10px" }}
               src={Icon}
             ></Image>
-            <span style={{ fontSize: "24px", marginLeft: "20px" }}>
-              react后台开发系统
-            </span>
+            {/* <span style={{ fontSize: "14px", marginLeft: "20px" }}>
+
+            </span> */}
           </div>
           <Dropdowns />
         </header>
@@ -87,6 +87,7 @@ const Layout = class extends Component {
             style={{
               width: isCollapse ? "50px" : "250px",
               backgroundColor: "#54211d",
+              height:"100%"
             }}
             defaultSelectedKeys={selectKeys}
             mode="inline"
@@ -97,7 +98,7 @@ const Layout = class extends Component {
             })}
           </Menu>
 
-          <div className="content">
+          <div className={module.content}>
             <div className={module.tag}>
               <Toggle toggle={this.toggle} />
             </div>

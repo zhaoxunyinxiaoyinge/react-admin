@@ -31,18 +31,18 @@ const danyRoute = [
 
   {
     pathname: "/admin/subject",
-    title: "科目详情",
+    title: "树形组件",
     icon: <ContainerOutlined/>,
     children: [
       {
         pathname: "/admin/subject/ts",
         component: Ts,
-        title: "ts",
+        title: "图标字体",
       },
       {
         pathname: "/admin/subject/js",
         component: Js,
-        title: "js",
+        title: "跑马灯",
       },
     ],
   },
@@ -50,7 +50,7 @@ const danyRoute = [
   {
     pathname: "/admin/user",
     component: User,
-    title: "用户信息",
+    title: "用户个人信息",
     icon: <UserAddOutlined/>,
   },
 ];
