@@ -1,7 +1,7 @@
 import React, { createRef, Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { getData } from "./../../store/actionReduires";
+import { getData } from "../../store/actionReduires";
 import module from "./index.module.scss";
 import { Row, Col } from "antd";
 import { getDanboardTable } from "./api/index";

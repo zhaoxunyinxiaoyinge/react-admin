@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import { Tag } from "antd";
+import {Breadcrumb} from "antd";
 const Breakrumb = class extends Component {
-  getBreacrum(){}
+  getBreacrum() {}
   render() {
     return (
-      <div className={module.breakrumb}>
-        <Tag
-          closable
-        >
-          Movies
-        </Tag>
+      <div style={{height:"50px",display: "flex", alignItems: "center" }}>
+        <Breadcrumb separator=">">
+          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="">Application Center</Breadcrumb.Item>
+          <Breadcrumb.Item href="">Application List</Breadcrumb.Item>
+          <Breadcrumb.Item>An Application</Breadcrumb.Item>
+        </Breadcrumb>
+        ,
       </div>
     );
   }

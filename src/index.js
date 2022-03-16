@@ -20,21 +20,19 @@ ReactDOM.render(
   <Provider  store={store}>
   <Router>
     <Switch>
-      <Route
-        path="/admin"
-        render={(routeProps) => <App {...routeProps} />}
-      ></Route>
-      {baseRouter.map((item, index) => {
-        return (
-          <Route
-            key={index}
-            path={item.pathname}
-            component={item.component}
-          ></Route>
-        );
-      })}
-      <Redirect to="/admin" from="/" exact />
-      <Redirect to="/404"></Redirect>
+        {baseRouter.map((item, index) => {
+          return (
+            <Route
+              key={index}
+              path={item.pathname}
+              component={item.component}
+            ></Route>
+          );
+        })}
+    {/*设置不能设置的动态路由 */}
+        
+        <Route   path='/' render={(props)=><App {...props} />}>
+        </Route>
     </Switch>
   </Router>
   </Provider>,

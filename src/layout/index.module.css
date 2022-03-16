@@ -32,12 +32,25 @@
 
 .menucolor {
   color: #fff;
-  background-color: #54211d;
+  background-color:#382828 ;
+  margin: 0;
+}
+.sub .menucolor {
+  margin: 0px!important;
+  padding: 0;
+  border:none;
 }
 
 .breakrumb {
   display: flex;
   align-items: center;
+
+}
+
+.ant-menu-submenu-vertical  .ant-menu-item {
+    
+  margin: 0!important;
+ 
 }
 
 .tag {
@@ -46,37 +59,45 @@
   height: 40px;
 }
 
-:global(.ant-menu-inline .ant-menu-item) {
-  height: 50px !important;
+
+:global(.ant-menu-item a ) {
+  height: 48px !important;
   margin: 0;
-}
-
-:global( .ant-menu-inline .ant-menu-item:not(:last-child)){
-  margin: 0;
-}
-
-:global(.ant-menu-inline .ant-menu-item::after) {
-  border: none;
-} 
-
-:global(.ant-menu-inline .ant-menu-item){
-  width: 100% ;
-}
-
-:global(.ant-menu-item a){
   color:#fff
 }
 
-:global(.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected){
-  background-color: #6b2c25;
+:global(.ant-menu-title-content){
+  color:#fff
 }
 
-:global(.ant-menu-submenu-popup .ant-menu-item ){
-  /* background-color: #6b2c25; */
-  margin: 0;
+:global(.ant-menu-submenu-arrow){
+  color:#fff
 }
+ :global( .anticon .anticon-container .ant-menu-item-icon){
+  color:#fff
+ }  
 
-:global(.ant-menu-submenu-popup .ant-menu){
-  background-color: #6b2c25;
-  /* margin: 0; */
-}
+ :global( .anticon){
+     color:#fff
+ }
+
+  :global( .anticon-menu-fold){
+  color:#000
+ }
+
+ .ant-menu-item:active, .ant-menu-submenu-title:active{
+
+ }
+
+ :global(.ant-menu-item:active){
+   background-color: red;
+ }
+
+
+
+
+
+
+
+
+

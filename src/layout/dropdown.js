@@ -40,7 +40,7 @@ const Dropdowns = class extends Component {
       <Space direction="vertical">
         <Space wrap>
           <Dropdown overlay={menu} placement="bottomCenter">
-            <Button type="primary">点击查看</Button>
+            <Button type="primary">查看更多</Button>
           </Dropdown>
         </Space>
       </Space>

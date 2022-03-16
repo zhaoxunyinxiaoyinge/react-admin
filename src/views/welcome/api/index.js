@@ -1,4 +1,4 @@
-import instance from "./../../../utils/index";
+import instance from "../../../utils/index";
 
 export function getDanboardTable(params){
     return instance({
